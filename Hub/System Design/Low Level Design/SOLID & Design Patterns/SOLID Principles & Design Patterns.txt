@@ -1,0 +1,23 @@
+SOLID Principles:
+
+Design Patterns- Design Patterns are proven solutions to commonly occurring software design problems.
+
+- It helps the structure to make the code; Maintainable, Scalable, Reusable, Flexible.
+- These are not Frameworks, Libraries, Code-Snippets but they are Standardized solutions, best practices, proven solutions.
+- They are used to provide cleaner and smarter codes.
+
+(YOU WILL STOP WRITING CODES INSTEAD YOU WILL WRITE SYSTEMS)
+
+Types of Design Patterns:
+
+Creational - These patterns deal with object creation mechanisms. How objects should be created in an efficient and flexible ways.
+Patterns- Factory, Abstract Factory, Singleton, Builder, Prototype.
+
+Structural - These pattern focus on how classes and objects are organized and related to each other. They help us structure our codes in flexible and maintainable ways.
+Patterns- Adapter, Decorator, Proxy.
+These patterns are used in enterprises applications and spring frameworks.
+
+Behavioral - These patterns focus on communication between objects. This shows how objects react with each other and shows responsibilities.
+Patterns- Observer, Strategy, Chain of Responsibility. 
+They are used in loosely coupled and highly extensible applications.
+
