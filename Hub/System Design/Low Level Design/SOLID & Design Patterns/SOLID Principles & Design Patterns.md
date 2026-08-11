@@ -158,7 +158,7 @@ Create another parent interface with methods only the child class needs. So inst
 
 
 
-Def- A class should not be forced to implement methods which it does not use. i.e, Instead of creating one large interface, we should create smaller and more specific interfaces. 
+Def- A class should not be forced to implement methods which it does not use. i.e, Instead of creating one large interface, we should create smaller and more specific interfaces.
 
 
 
@@ -190,7 +190,7 @@ Create separate Interfaces for specific methods where the class can implement th
 
 
 
-|**ISP** |**LSP**|
+|**ISP**|**LSP**|
 |-|-|
 |A class should not be forced to implement a method that it does not want to.|A parent object can be replaced by a child object without breaking the code.|
 
@@ -257,6 +257,70 @@ when you implement hard coupling.
 \-These patterns deal with object creation mechanisms. How objects should be created in an efficient and flexible ways.
 
 Patterns- Factory, Abstract Factory, Singleton, Builder, Prototype.
+
+
+
+###### **Factory Pattern:**
+
+
+
+###### **Simple Factory Pattern:**
+
+
+
+def- It is a design Pattern which is use to create objects without exposing the object creation logic to the client.
+
+
+
+**Centralized Object Creation Logic**
+
+
+
+Suppose, we have an interface where multiple classes are implementing that interface, now different client in the application might need objects from these classes so, the factory pattern says client should not be one creating the objects instead create a factory class which contains the object creation logic where it decides which object should be written based on the requirement.
+
+
+
+So client asks the factory for the objects, where the factory creates objects internally and gives it to the clients.
+
+
+
+Client is not worried abt the object creation it should be the factory class.
+
+
+
+###### **Abstract Factory Pattern:**
+
+
+
+Def- It is a Design pattern which provides an interface for creating families of objects without specifying their concrete classes.
+
+
+
+Basically it is an enhancement over the factory pattern. Instead of using single factory class to create all the objects, we use a collection of factory pattern.
+
+
+
+If you have families of objects, abstract pattern actually will be in use. 
+
+
+
+###### **Factory Method Pattern:**
+
+
+
+Def- It defines an interface for creating objects, and allows subclasses to decide which concrete object to create.
+
+&#x20;
+
+Instead of creating objects directly using new, we create objects using factory child classes.
+
+
+
+By using Simple Factory pattern, eventually creating more conditions and objects, the factory class becomes huge which breaks the SRP \& OCP Principles.
+
+
+
+Make the factory class into interface and implement specific system classes connecting the factory interface, create sub factory classes.
 
 
 
