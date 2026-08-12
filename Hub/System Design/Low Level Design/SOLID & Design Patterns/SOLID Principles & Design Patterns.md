@@ -300,7 +300,7 @@ Basically it is an enhancement over the factory pattern. Instead of using single
 
 
 
-If you have families of objects, abstract pattern actually will be in use. 
+If you have families of objects, abstract pattern actually will be in use.
 
 
 
@@ -321,6 +321,94 @@ By using Simple Factory pattern, eventually creating more conditions and objects
 
 
 Make the factory class into interface and implement specific system classes connecting the factory interface, create sub factory classes.
+
+
+
+###### **Builder Pattern:**
+
+
+
+Def- it is a Design Pattern that helps us create complex objects easily, by keeping the object creation process flexible, readable, and maintainable. Instead of passing multiple parameters in a huge constructor we build the objects piece by piece using a builder.
+
+
+
+How it breaks:
+
+
+
+By adding parameters in the future, where the parameters are not involved with some of the clients it will throw an exception error. Where you have to make it backward compatible and should be accepted by every clients. You can solve it by giving null values to the parameters in the clients which makes it a bad design, where if you have more clients you have to update at various places which is difficult to manage.
+
+
+
+You can solve the issue by creating another Constructor with an extra field, which can solve the issue whereas, if you have multiple fields you have to create multiple Constructors with multiple combinations of fields, which is bad structure.
+
+
+
+for eg:
+
+
+
+public User(String name, int age){
+
+this.name = name;
+
+this.age = age;
+
+}
+
+
+
+public User(String name, int age, String city){
+
+this.name = name;
+
+this.age = age;
+
+this.city = city;
+
+}
+
+
+
+This is a bad structured solution.
+
+
+
+Solution:
+
+
+
+Instead of producing multiple parameters in a constructor, Using a builder, build our object piece by piece. Where you should create a separate builder class, connect that builder class with a single constructor, where the client will get the required parameters from the constructor using the builder(Setter).
+
+
+
+Optimized:
+
+
+
+If I don't want any client to call the constructor directly, so if we make the constructor private which makes the client cant access the class because it is outside the scope. So Instead of creating a builder class make a child class inside the constructor class
+
+
+
+Advantages:
+
+
+
+Dont need different combinations of constructors. which can be made private in optimized builder pattern.
+
+Easy to read, modifying may have given bugs if not builder pattern in use.
+
+It is backward compatible, where i can add new parameters/fields.
+
+
+
+Disadvantages:
+
+
+
+We have to create a seperate class, where we need to add logics which makes it complex but has its advantages. 
+
+
 
 
 
