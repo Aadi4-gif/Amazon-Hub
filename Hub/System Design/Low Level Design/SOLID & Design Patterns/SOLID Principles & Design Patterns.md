@@ -332,7 +332,7 @@ Def- it is a Design Pattern that helps us create complex objects easily, by keep
 
 
 
-How it breaks:
+**How it breaks:**
 
 
 
@@ -344,7 +344,7 @@ You can solve the issue by creating another Constructor with an extra field, whi
 
 
 
-for eg:
+**for eg:**
 
 
 
@@ -374,7 +374,7 @@ This is a bad structured solution.
 
 
 
-Solution:
+**Solution:**
 
 
 
@@ -382,7 +382,7 @@ Instead of producing multiple parameters in a constructor, Using a builder, buil
 
 
 
-Optimized:
+**Optimized:**
 
 
 
@@ -390,11 +390,11 @@ If I don't want any client to call the constructor directly, so if we make the c
 
 
 
-Advantages:
+**Advantages:**
 
 
 
-Dont need different combinations of constructors. which can be made private in optimized builder pattern.
+Don't need different combinations of constructors. which can be made private in optimized builder pattern.
 
 Easy to read, modifying may have given bugs if not builder pattern in use.
 
@@ -402,13 +402,87 @@ It is backward compatible, where i can add new parameters/fields.
 
 
 
-Disadvantages:
+**Disadvantages:**
 
 
 
-We have to create a seperate class, where we need to add logics which makes it complex but has its advantages. 
+We have to create a separate class, where we need to add logics which makes it complex but has its advantages.
 
 
+
+###### **Singleton Pattern:**
+
+
+
+Singleton ensures that only a single object of a class exists throughout the entire application. There should be 1 instance exists in the entire application.
+
+
+
+It is easy to Implement, but it is filled with loopholes and drawbacks.
+
+
+
+Basic Implementation:
+
+
+
+Make the constructor class private, so that the class cant be accessed outside it's scope. And create an object inside the constructor class and should create a method which returns the object which can be accessed outside the class through the method using the static means by the client, the client can only access the single obj of that instance even after creating multiple variables.
+
+
+
+Drawback - In the basic approach, the object is created irrespective of its usage i.e, even-though the object was not used by the clients, the object gets created. If we have multiple parameters/a populated class it will affect the memory of the system. It will take unwanted memory. The object gets created at the loading of the class cause of the static means.
+
+
+
+
+
+Lazy Initialization: (Better)
+
+
+
+In this, create an empty variable and create the object in the public (clients connectivity) method when the empty variable is null, so that it makes only one instance can get created.
+
+
+
+Drawback - It is for single threaded environment. When multiple thread are created, the treads can enter the method at the same time, where it reads the method at the same time which can create multiple objects/instances. Which breaks the singleton pattern.
+
+
+
+Thread safety using synchronized:
+
+
+
+To make the class thread safe, by using the "synchronized" keyword in (clients connectivity) method where the object is created, you can make the threads come one by one.
+
+
+
+Drawback - this approach also comes with a drawback. With synchronized only one thread can access the method at a time. Now that is good in the beginning because it will allow only one instance to be created. But once the object has been created now there is no need for a lock because the if condition will always fail. Now even if multiple threads are there at the same time still the if condition will fail because object has already been created. However, because of synchronized, even after the singleton object has been created, every thread still has to wait for the lock. Now, this adds unnecessary overhead and can impact the performance, especially in high concurrency applications.
+
+
+
+Double checked locking Mechanism:
+
+
+
+Synchronization keyword is implemented at a method level which makes the method locked for future thread even after singleton object has been created. So we need to check the synchronized thing only the first time where the obj is created and further more no need to check where the method fails.
+
+
+
+Instead of making the child class synchronized, create a synchronized block where the thread enters the block only if the thread is null where it creates the objects, further more the same thread will not enter the synchronized block as it is not equal to null.
+
+
+
+Using Enum- Homework.
+
+
+
+Real-Time Scenario:
+
+
+
+* Logging System - A single logger instance writes logs throughout the application.
+* Database Connection Manager - Only one object manages DB connections across the application.
+* Configuration/Properties Manager - Reads application configuration once and shares it everywhere.
 
 
 
