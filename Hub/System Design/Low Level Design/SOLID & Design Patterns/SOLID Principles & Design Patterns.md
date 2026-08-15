@@ -422,7 +422,7 @@ It is easy to Implement, but it is filled with loopholes and drawbacks.
 
 
 
-Basic Implementation:
+**Basic Implementation:**
 
 
 
@@ -436,7 +436,7 @@ Drawback - In the basic approach, the object is created irrespective of its usag
 
 
 
-Lazy Initialization: (Better)
+**Lazy Initialization: (Better)**
 
 
 
@@ -448,7 +448,7 @@ Drawback - It is for single threaded environment. When multiple thread are creat
 
 
 
-Thread safety using synchronized:
+**Thread safety using synchronized:**
 
 
 
@@ -460,7 +460,7 @@ Drawback - this approach also comes with a drawback. With synchronized only one 
 
 
 
-Double checked locking Mechanism:
+**Double checked locking Mechanism:**
 
 
 
@@ -476,7 +476,7 @@ Using Enum- Homework.
 
 
 
-Real-Time Scenario:
+**Real-Time Scenario:**
 
 
 
@@ -485,6 +485,56 @@ Real-Time Scenario:
 * Configuration/Properties Manager - Reads application configuration once and shares it everywhere.
 
 
+
+###### **Prototype Pattern:**
+
+
+
+Def - It is a design pattern that allows us to create new objects by copying existing objects. Instead of creating the objects from scratch, create the object once and can cloned multiple times whenever needed. This improves performance and saves time.
+
+
+
+It can achieved using a "copy constructor"; It creates a new object by copying the data of an existing object.
+
+Create a clone interface which gets implemented by the method using the constructor.
+
+Further after the class creates the first object the heavy constructor will not be implemented instead it will call the copy constructor through the clone object method.
+
+
+
+Have setter methods for to define new properties/parameters for the cloned objects instead of having the same info on all objects.
+
+
+
+
+
+Shallow copy vs Deep copy:
+
+
+
+| Shallow|Deep|
+|-|-|
+|In a shallow copy, immutable fields like Strings or int are copied normally, but mutable objects are stilled shared between original and copied objects.<br /><br />If you changed the values for the mutable fields in one of my objects, it will change for others as well.<br /><br />it will be problematic if we add mutable fields like lists or reference of another class.|In a deep copy, even the mutable objects are copied separately so changes in one object do not affects the other.|
+
+
+
+
+
+Deep copy approach:
+
+
+
+In shallow copy, if we use a mutable field if we add a new parameter for an object it will change it for all objects. mutable field doesn't have separate memory.
+
+
+
+Create a list inside the copy constructor for the mutable field object. 
+
+&#x20;
+
+
+
+&#x20;
 
 ###### **Structural**
 
