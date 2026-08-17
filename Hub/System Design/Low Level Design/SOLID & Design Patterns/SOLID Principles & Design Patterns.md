@@ -550,7 +550,69 @@ Instead of tight coupling, we should implement Plug n Play.
 
 
 
-Create adapter classes for the 3rd party class where you implement the logic and connect this with the target class/interface
+Create adapter classes for the 3rd party class where you implement the logic and connect this with the target class/interface.
+
+
+
+###### **Proxy Pattern:**
+
+
+
+Def- It is a structural design pattern that provides a placeholder(Representative Object) for another object.
+
+
+
+Instead of directly accessing the real object, the client talks to the proxy, and the proxy controls how the real object is accessed.
+
+
+
+**Types of Proxy Patterns:**
+
+Virtual Proxy
+
+Protection Proxy
+
+Remote Proxy
+
+
+
+**Virtual Proxy:**
+
+
+
+It allows us to delay the creation of a heavy object until it is actually needed.
+
+
+
+We have to implement lazy Initialization and should make sure that the loading part is done only once.
+
+
+
+Create a proxy class, where you implement shallow copy to run the method with conditions which restricts the object creation.
+
+
+
+**Protection Proxy:**
+
+
+
+It controls access to the real objects by performing authorization or permission checks before allowing operations.
+
+
+
+It should follow SRP.
+
+
+
+**Remote Proxy:**
+
+
+
+It provides a local representative for a class that exists on a remote server thereby handling communication between the client and the remote class.
+
+
+
+It should follow SRP.
 
 
 
