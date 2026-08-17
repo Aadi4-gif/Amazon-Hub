@@ -508,11 +508,11 @@ Have setter methods for to define new properties/parameters for the cloned objec
 
 
 
-Shallow copy vs Deep copy:
+**Shallow copy vs Deep copy:**
 
 
 
-| Shallow|Deep|
+|**Shallow**|**Deep**|
 |-|-|
 |In a shallow copy, immutable fields like Strings or int are copied normally, but mutable objects are stilled shared between original and copied objects.<br /><br />If you changed the values for the mutable fields in one of my objects, it will change for others as well.<br /><br />it will be problematic if we add mutable fields like lists or reference of another class.|In a deep copy, even the mutable objects are copied separately so changes in one object do not affects the other.|
 
@@ -520,7 +520,7 @@ Shallow copy vs Deep copy:
 
 
 
-Deep copy approach:
+**Deep copy approach:**
 
 
 
@@ -528,9 +528,29 @@ In shallow copy, if we use a mutable field if we add a new parameter for an obje
 
 
 
-Create a list inside the copy constructor for the mutable field object. 
+Create a list inside the copy constructor for the mutable field object.
+
+
+
+
+
+###### **Abstract Pattern:**
+
+
+
+Def- It is a structural design pattern that allows two incompatible systems or interfaces to work together. this pattern helps to convert one interface into another so that both systems can understand and communicate.
+
+
+
+Three main components; Client, Target Class, 3rd Party Class. The adapter pattern connects these components together.
 
 &#x20;
+
+Instead of tight coupling, we should implement Plug n Play.
+
+
+
+Create adapter classes for the 3rd party class where you implement the logic and connect this with the target class/interface
 
 
 
