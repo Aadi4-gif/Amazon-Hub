@@ -532,9 +532,21 @@ Create a list inside the copy constructor for the mutable field object.
 
 
 
+##### **Structural**
 
 
-###### **Abstract Pattern:**
+
+\-These pattern focus on how classes and objects are organized and related to each other. They help us structure our codes in flexible and maintainable ways.
+
+Patterns- Adapter, Decorator, Proxy.
+
+These patterns are used in enterprises applications and spring frameworks.
+
+
+
+
+
+###### **Adapter Pattern:**
 
 
 
@@ -616,17 +628,21 @@ It should follow SRP.
 
 
 
-&#x20;
-
-###### **Structural**
+###### **Decorator Pattern:**
 
 
 
-\-These pattern focus on how classes and objects are organized and related to each other. They help us structure our codes in flexible and maintainable ways.
+Def- It is a structural design pattern that allows us to add new behavior or features to an object dynamically. It allows us to wrap an existing object and keep adding new features or behavior dynamically at runtime.
 
-Patterns- Adapter, Decorator, Proxy.
 
-These patterns are used in enterprises applications and spring frameworks.
+
+Decorator will have 'IS-A' and 'HAS-A' relationship with the base interface. i.e, it is a child class and it contains the reference of its parent class.
+
+
+
+A base child class implements the parent class and a decorator class implements the parent class, by extending multiple child classes to the decorator class, the decorator class  changes the base class object, which modifies the output.
+
+
 
 
 
