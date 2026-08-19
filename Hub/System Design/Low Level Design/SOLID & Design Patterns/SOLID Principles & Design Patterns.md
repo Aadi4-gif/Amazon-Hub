@@ -656,3 +656,59 @@ Patterns- Observer, Strategy, Chain of Responsibility.
 
 They are used in loosely coupled and highly extensible applications.
 
+
+
+
+
+###### **Observer Pattern:**
+
+
+
+Def- It is a design pattern where one object automatically notifies multiple other objects whenever any change or any change or any event occurs. i.e, whenever a event occurs, one subject will notifies all other objects/observer.  
+
+
+
+Refer You tube Observer.
+
+
+
+###### 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
