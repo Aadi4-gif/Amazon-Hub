@@ -664,7 +664,7 @@ They are used in loosely coupled and highly extensible applications.
 
 
 
-Def- It is a design pattern where one object automatically notifies multiple other objects whenever any change or any change or any event occurs. i.e, whenever a event occurs, one subject will notifies all other objects/observer.  
+Def- It is a design pattern where one object automatically notifies multiple other objects whenever any change or any change or any event occurs. i.e, whenever a event occurs, one subject will notifies all other objects/observer.
 
 
 
@@ -672,43 +672,17 @@ Refer You tube Observer.
 
 
 
+
+
+###### **Strategy Pattern:**
+
+
+
+Def- This pattern allows an object, known as the context, to delegate specific behaviors to a strategy object, enabling dynamic algorithm selection without modifying the context's core code. 
+
+
+
+The Strategy Pattern in Java is a behavioral design pattern that defines a family of algorithms, encapsulates each one in a separate class, and makes them interchangeable at runtime.
+
 ###### 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
