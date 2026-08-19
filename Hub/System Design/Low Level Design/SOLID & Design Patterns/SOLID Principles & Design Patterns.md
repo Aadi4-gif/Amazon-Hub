@@ -678,11 +678,33 @@ Refer You tube Observer.
 
 
 
-Def- This pattern allows an object, known as the context, to delegate specific behaviors to a strategy object, enabling dynamic algorithm selection without modifying the context's core code. 
+Def- This pattern allows an object, known as the context, to delegate specific behaviors to a strategy object, enabling dynamic algorithm selection without modifying the context's core code.
 
 
 
 The Strategy Pattern in Java is a behavioral design pattern that defines a family of algorithms, encapsulates each one in a separate class, and makes them interchangeable at runtime.
+
+
+
+refer Notification-Strategy Pattern.
+
+
+
+###### **Chain Of Responsibility Pattern:**
+
+
+
+Def- The Chain of Responsibility is a behavioral design pattern that decouples the sender of a request from its receivers by passing the request along a chain of handlers.  Each handler in the chain contains logic to decide whether to process the request or forward it to the next handler, promoting loose coupling and flexible, dynamic processing.
+
+
+
+Refer Customer Service-chain of responsibility.
+
+
+
+
+
+
 
 ###### 
 
