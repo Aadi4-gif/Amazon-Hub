@@ -1,3 +1,9 @@
+### **Learned from-**
+
+### **https://www.youtube.com/playlist?list=PLwsTfOnizFBwXqnxORopxQrGsdPCr2Rbq**
+
+### 
+
 ### **SOLID Principles:**
 
 
@@ -520,6 +526,10 @@ Have setter methods for to define new properties/parameters for the cloned objec
 
 
 
+refer Game bot-shallow copy.
+
+
+
 **Deep copy approach:**
 
 
@@ -529,6 +539,10 @@ In shallow copy, if we use a mutable field if we add a new parameter for an obje
 
 
 Create a list inside the copy constructor for the mutable field object.
+
+
+
+refer Game bot-deep copy.
 
 
 
@@ -563,6 +577,10 @@ Instead of tight coupling, we should implement Plug n Play.
 
 
 Create adapter classes for the 3rd party class where you implement the logic and connect this with the target class/interface.
+
+
+
+refer Payment-Adapter.
 
 
 
@@ -604,6 +622,10 @@ Create a proxy class, where you implement shallow copy to run the method with co
 
 
 
+refer Proxy pattern.
+
+
+
 **Protection Proxy:**
 
 
@@ -616,6 +638,10 @@ It should follow SRP.
 
 
 
+refer proxy pattern.
+
+
+
 **Remote Proxy:**
 
 
@@ -625,6 +651,10 @@ It provides a local representative for a class that exists on a remote server th
 
 
 It should follow SRP.
+
+
+
+refer proxy pattern.
 
 
 
@@ -644,7 +674,9 @@ A base child class implements the parent class and a decorator class implements 
 
 
 
+refer Pizza decorator
 
+refer Hotel Decorator 
 
 ###### **Behavioral**
 
