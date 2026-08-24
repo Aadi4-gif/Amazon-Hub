@@ -48,11 +48,11 @@ Key characteristics include:
 
 
 
-State: Stored in variables (fields) specific to that object instance. 
+State: Stored in variables (fields) specific to that object instance.
 
 
 
-Behavior: Defined by methods that the object can execute. 
+Behavior: Defined by methods that the object can execute.
 
 
 
@@ -93,14 +93,50 @@ JDK vs JRE vs JVM-
 |Component|Full Name|Primary Purpose|Target Audience|
 |-|-|-|-|
 |JDK|Java Development Kit|Develop, compile, and debug code|developers|
-|JRE|Java Runtime Environment  |Run java application|end-users|
+|JRE|Java Runtime Environment|Run java application|end-users|
 |JVM|Java Virtual Machine|execute java bytecode|Runtime System|
 
 
 
 
 
+###### **Methods:**
 
+
+
+Def- A method definition in Java is a block of code within a class that performs a specific task and is executed only when called or invoked.  It serves as a reusable unit of logic, promoting code modularity, reusability, and maintainability by allowing the same code to be used multiple times without duplication.
+
+&#x20; 
+
+Method Overloading- It is a concept of having multiple methods with different parameters with same name.
+
+
+
+for e.g. 
+
+public class Calculator {
+
+
+
+
+
+
+
+&#x20;   public int add(int n1, int n2){
+
+&#x20;       return n1+n2;
+
+&#x20;   }
+
+
+
+&#x20;   public int add(int n1, int n2, int n3){
+
+&#x20;       return n1+n2+n3;
+
+&#x20;   }
+
+}
 
 
 
