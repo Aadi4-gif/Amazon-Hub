@@ -106,13 +106,13 @@ JDK vs JRE vs JVM-
 
 Def- A method definition in Java is a block of code within a class that performs a specific task and is executed only when called or invoked.  It serves as a reusable unit of logic, promoting code modularity, reusability, and maintainability by allowing the same code to be used multiple times without duplication.
 
-&#x20; 
+&#x20;
 
 Method Overloading- It is a concept of having multiple methods with different parameters with same name.
 
 
 
-for e.g. 
+for e.g.
 
 public class Calculator {
 
@@ -137,6 +137,94 @@ public class Calculator {
 &#x20;   }
 
 }
+
+
+
+
+
+###### **Stack \& Heap:**
+
+
+
+Def- In Java, memory management is divided into Stack Memory and Heap Memory, each serving distinct purposes in the Java Virtual Machine (JVM). 
+
+
+
+Stack Memory is used for method execution and local variables.  It operates on a Last-In-First-Out (LIFO) basis, meaning memory is automatically allocated and deallocated as methods are called and return.  It is thread-specific, faster to access, and has a fixed, smaller size.  If the stack is exhausted (e.g., via deep recursion), a StackOverflowError is thrown. 
+
+
+
+Heap Memory is used for object storage and instance variables.  It is shared across all threads and is dynamically allocated at runtime using the new keyword.  Unlike the stack, heap memory is not automatically cleared when a method ends; instead, it is managed by the Garbage Collector to reclaim space from unused objects.  It is larger and more flexible but slower to access than the stack. If the heap is exhausted, an OutOfMemoryError occurs.
+
+
+
+Inside JVM memory, there is Stack memory which follows LIFO where you store data and Heap memory have open space.
+
+
+
+There are local variables and instance variables in system.
+
+
+
+The stack will contain Key and value, key is the name of the variable.
+
+
+
+Every method will have its own stack. variable which are dedicated to a method is local variable and the variables which are not dedicated to some methods is instance variable.
+
+
+
+The objects and instance variable are created inside Heap memory. 
+
+
+
+The content (objects/instances) of the heap is assigned with an address which are given to the stack which helps the stack to access the method without depending on heap.  
+
+
+
+The main looks at its stack memory and identifies the object address and access the heap using the address.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
