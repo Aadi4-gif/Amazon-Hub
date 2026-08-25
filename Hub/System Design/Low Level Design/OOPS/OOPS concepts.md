@@ -146,11 +146,11 @@ public class Calculator {
 
 
 
-Def- In Java, memory management is divided into Stack Memory and Heap Memory, each serving distinct purposes in the Java Virtual Machine (JVM). 
+Def- In Java, memory management is divided into Stack Memory and Heap Memory, each serving distinct purposes in the Java Virtual Machine (JVM).
 
 
 
-Stack Memory is used for method execution and local variables.  It operates on a Last-In-First-Out (LIFO) basis, meaning memory is automatically allocated and deallocated as methods are called and return.  It is thread-specific, faster to access, and has a fixed, smaller size.  If the stack is exhausted (e.g., via deep recursion), a StackOverflowError is thrown. 
+Stack Memory is used for method execution and local variables.  It operates on a Last-In-First-Out (LIFO) basis, meaning memory is automatically allocated and deallocated as methods are called and return.  It is thread-specific, faster to access, and has a fixed, smaller size.  If the stack is exhausted (e.g., via deep recursion), a StackOverflowError is thrown.
 
 
 
@@ -174,15 +174,59 @@ Every method will have its own stack. variable which are dedicated to a method i
 
 
 
-The objects and instance variable are created inside Heap memory. 
+The objects and instance variable are created inside Heap memory.
 
 
 
-The content (objects/instances) of the heap is assigned with an address which are given to the stack which helps the stack to access the method without depending on heap.  
+The content (objects/instances) of the heap is assigned with an address which are given to the stack which helps the stack to access the method without depending on heap.
 
 
 
 The main looks at its stack memory and identifies the object address and access the heap using the address.
+
+
+
+
+
+###### **Array:**
+
+
+
+Def- In Java, an array is a fixed-size, homogeneous data structure that stores elements of the same type in contiguous memory locations.  Because arrays are objects, their length is established upon creation and cannot be changed dynamically, requiring the use of the .length property to determine size rather than a method.
+
+
+
+To store multiple values to a variable. 
+
+
+
+syntax; 
+
+empty array with fixed size
+
+int arr\[] = new int\[size];
+
+array with known values
+
+int arr\[] = {1,2,3};
+
+
+
+Indexing starts with 0, which is the accessing address for the values of the array.
+
+
+
+For updating the values; arr\[1] = 4 which makes {1,4,3}.
+
+
+
+.length shows the length of the array i.e. how many spaces there are in the array until it ends.
+
+
+
+
+
+
 
 
 
