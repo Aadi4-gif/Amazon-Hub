@@ -280,7 +280,7 @@ Def- In multidimensional array, each array size can be fixed and varying, this v
 
 
 
-Syntax- 
+Syntax-
 
 
 
@@ -297,11 +297,12 @@ Here specifying separate array sizes.
 
 
 
+
 **Indexing:**
 
 
 
-0  
+0
 
 |0|1|2|
 |-|-|-|
@@ -354,4 +355,20 @@ Refer Jagged \& 3D Array-OOPS.
 
 
 
+
+###### **Drawbacks of Array:**
+
+
+
+* Array is an object, which takes memory from the heap, where it occupy the space continuously which means once the array size is specified we cannot go back and expand the array. Array is Fixed.
+* Every time you search for an element, it traverse through it which takes time.
+* It cannot carry multiple datatypes of values.
+
+
+
+**Collections exceeds these drawbacks but array have its own use cases.**
+
+
+
+**Every time you know a fixed size and to store multiple elements, array comes the first.**
 
