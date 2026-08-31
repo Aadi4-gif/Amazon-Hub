@@ -396,3 +396,49 @@ Refer Array of Objects- OOPS.
 
 
 
+###### **Enhanced For Loop:**
+
+
+
+Def- The enhanced for loop (also known as the for-each loop in other languages) is a streamlined iteration construct introduced in Java 5 that simplifies traversing arrays and collections without manual index management.  Its syntax is for (Type variable : collection) { ... }, where the variable holds each element sequentially, making code more readable and less prone to off-by-one errors compared to traditional for loops. 
+
+
+
+**Key Characteristics:**
+
+
+
+Read-Only Iteration: It is ideal for reading elements; modifying the loop variable does not change the original array or collection.
+
+
+
+No Index Access: You cannot access the current index or perform backward iteration directly; use a standard for loop if index-based control or modification of elements is required. 
+
+
+
+Versatility: It works with arrays, Array List, HashSet, and any object implementing the Iterable interface, including Map. Entry sets.
+
+
+
+
+
+Refer Enhanced For Loop- OOPS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
