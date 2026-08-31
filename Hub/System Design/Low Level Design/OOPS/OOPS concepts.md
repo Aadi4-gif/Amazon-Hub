@@ -196,11 +196,11 @@ Def- In Java, an array is a fixed-size, homogeneous data structure that stores e
 
 
 
-To store multiple values to a variable. 
+To store multiple values to a variable.
 
 
 
-syntax; 
+syntax;
 
 empty array with fixed size
 
@@ -224,49 +224,45 @@ For updating the values; arr\[1] = 4 which makes {1,4,3}.
 
 
 
+###### **Multi-Dimensional Array:**
 
 
 
+Def-  It is a container of multiple arrays i.e. an array containing multiple arrays. 
 
 
 
+Syntax- datatype arr\[]\[] = new datatype\[i]\[j];. 
+
+i- no of arrays in a multi dimensional array.
+
+j- no of elements in each array.
 
 
 
+**Indexing:**
 
 
 
+||0|1|2|3|
+|-|-|-|-|-|
+|0|5|2|6|1|
+|1|3|2|1|7|
+|2|4|8|1|2|
 
 
 
+e.g.
 
 
 
+5-(0,0)
+
+7-(1,3)
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Refer Multi-Dimensional Array-OOPS.
 
 
 
