@@ -220,7 +220,7 @@ For updating the values; arr\[1] = 4 which makes {1,4,3}.
 
 
 
-.length shows the length of the array i.e. how many spaces there are in the array until it ends.
+.length shows the length of the array i.e. how many spaces there are in the array until it ends. It won't make an out of bound error.
 
 
 
@@ -371,4 +371,28 @@ Refer Jagged \& 3D Array-OOPS.
 
 
 **Every time you know a fixed size and to store multiple elements, array comes the first.**
+
+
+
+**+// Exception are errors which comes in runtime.**
+
+
+
+###### **Array of Objects:**
+
+
+
+Def- An array of objects in Java is a fixed-size collection that stores references (pointers) to instances of a specific class, allowing for organized management of multiple related entities.  Unlike arrays of primitives, the array itself holds memory addresses, requiring each element to be explicitly instantiated before use.
+
+
+
+While printing the array of objects, If you print the array without specifying in the print statement, it will print the address of the array objects elements, instead specify the parameters as given in the reference.
+
+
+
+Refer Array of Objects- OOPS.
+
+
+
+
 
