@@ -228,11 +228,11 @@ For updating the values; arr\[1] = 4 which makes {1,4,3}.
 
 
 
-Def-  It is a container of multiple arrays i.e. an array containing multiple arrays. 
+Def-  It is a container of multiple arrays i.e. an array containing multiple arrays.
 
 
 
-Syntax- datatype arr\[]\[] = new datatype\[i]\[j];. 
+Syntax- datatype arr\[]\[] = new datatype\[i]\[j];.
 
 i- no of arrays in a multi dimensional array.
 
@@ -263,6 +263,93 @@ e.g.
 
 
 Refer Multi-Dimensional Array-OOPS.
+
+
+
+
+
+###### **Jagged \& 3D-Array:**
+
+
+
+**Jagged:**
+
+
+
+Def- In multidimensional array, each array size can be fixed and varying, this varying sized array is called jagged array.
+
+
+
+Syntax- 
+
+
+
+datatype arr\[]\[] = new datatype\[i]\[];
+
+arr\[o] = new int\[3];
+
+arr\[1] = new int\[4];
+
+arr\[2] = new int\[2];
+
+Here specifying separate array sizes.
+
+
+
+
+**Indexing:**
+
+
+
+0  
+
+|0|1|2|
+|-|-|-|
+||||
+
+1
+
+|0|1|2|3|
+|-|-|-|-|
+|||||
+
+2
+
+|0|1|
+|-|-|
+|||
+
+
+
+**3D-Array:**
+
+
+
+Def- A 3D array in Java is a collection of 2D arrays, effectively forming a cube of data where each element is accessed using three indices: array\[depth]\[row]\[column].  It is declared using three sets of square brackets, such as int\[]\[]\[] arr = new int\[x]\[y]\[z], where x, y, and z represent the sizes of the respective dimensions.
+
+
+
+Syntax- int\[]\[]\[] arr = new int\[x]\[y]\[z];.
+
+here,
+
+x- no of arrays.
+
+y- no of arrays inside this array.
+
+z- values inside that array.
+
+
+
+**Indexing:**
+
+
+
+e.g. https://kevinsguides.com/wp-content/uploads/2024/06/3d-array.svg
+
+
+
+Refer Jagged \& 3D Array-OOPS.
 
 
 
