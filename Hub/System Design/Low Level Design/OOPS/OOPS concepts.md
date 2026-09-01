@@ -400,7 +400,7 @@ Refer Array of Objects- OOPS.
 
 
 
-Def- The enhanced for loop (also known as the for-each loop in other languages) is a streamlined iteration construct introduced in Java 5 that simplifies traversing arrays and collections without manual index management.  Its syntax is for (Type variable : collection) { ... }, where the variable holds each element sequentially, making code more readable and less prone to off-by-one errors compared to traditional for loops. 
+Def- The enhanced for loop (also known as the for-each loop in other languages) is a streamlined iteration construct introduced in Java 5 that simplifies traversing arrays and collections without manual index management.  Its syntax is for (Type variable : collection) { ... }, where the variable holds each element sequentially, making code more readable and less prone to off-by-one errors compared to traditional for loops.
 
 
 
@@ -412,7 +412,7 @@ Read-Only Iteration: It is ideal for reading elements; modifying the loop variab
 
 
 
-No Index Access: You cannot access the current index or perform backward iteration directly; use a standard for loop if index-based control or modification of elements is required. 
+No Index Access: You cannot access the current index or perform backward iteration directly; use a standard for loop if index-based control or modification of elements is required.
 
 
 
@@ -423,6 +423,92 @@ Versatility: It works with arrays, Array List, HashSet, and any object implement
 
 
 Refer Enhanced For Loop- OOPS.
+
+
+
+
+
+###### **String:**
+
+
+
+Def- It is a character stream, which have a datatype keyword "String", it's starts with a capital letter unlike other datatypes like int, double, char, Boolean etc... because It is actually a class in java(String.java).
+
+
+
+Original String creation: (Since it is a class we will create an object of String)
+
+
+
+String name = new String("Aadi");(Syntax)
+
+
+
+Since it is a class, it contains various methods.
+
+
+
+Universal use will be;
+
+String name = "Aadi";(Syntax)
+
+
+
+Immutable;
+
+
+
+The heap memory where the objects are created in the string class, contains a block/container called String Constant Pool. Which means every string/string literal the dev creates is constant. 
+
+
+
+for e.g. lets say three string variables are created; name, n1, n2 in the stack memory and the string name contains "aadi", n1 contains "Aadi", n2 contains "Aadi", In heap memory, the objects are created in such a way that name is unique(aadi), n1 is also unique(Aadi), n2 is not unique which is the same as n1(Aadi) so the the heap memory gives the same memory address to the stack as identity.(due to string constant pool) which helps to disallow duplicate strings to take up memory.so it gives the address as name-101, n1-102, n2-102 in the stack.
+
+
+
+And you cannot update the string, where you can change the data of an object instead a new object will be created in the heap, where you are changing the address of the string variable, for e.g. name="aadi", and you are updating name=name+"tyan" here the name has 101 as address and when you are changing it, a new object is created in heap with address 103 as name="aadityan" which changes the address of name in the stack from 101 to 103.
+
+
+
+And the first object will be eligible for garbage collection where it will be removed after sometime to get the memory back.
+
+
+
+The term to remember;
+
+
+
+Mutable String - which can be changed.
+
+
+
+Immutable String - which cannot be unchanged. the above given e.g. is given for immutable string.
+
+
+
+Mutable;
+
+
+
+To create mutable String, we have two classes in java called String Buffer \& String Builder.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
