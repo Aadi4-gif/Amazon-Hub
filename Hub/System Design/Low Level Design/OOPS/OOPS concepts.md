@@ -458,7 +458,7 @@ Immutable;
 
 
 
-The heap memory where the objects are created in the string class, contains a block/container called String Constant Pool. Which means every string/string literal the dev creates is constant. 
+The heap memory where the objects are created in the string class, contains a block/container called String Constant Pool. Which means every string/string literal the dev creates is constant.
 
 
 
@@ -494,19 +494,27 @@ To create mutable String, we have two classes in java called String Buffer \& St
 
 
 
+**String Buffer**
 
 
 
+In the string buffer, it contains a string which is mutable. To make it efficient, string buffer will give a buffer size which is 16bytes. And it will give a extra 16byte memory for updating or assigning to avoid relocating memory in the heap.
 
 
 
+The string buffer has multiple methods like append(), toString(), insert(), substring() etc... to update and assign the string.
 
 
 
+**String Builder**
 
 
 
+String Builder is similar to string Buffer, one difference is string buffer is tread-safe and string builder is not thread-safe. 
 
+
+
+Refer String \& Immutable String- OOPS \& Mutable String- OOPS.
 
 
 
