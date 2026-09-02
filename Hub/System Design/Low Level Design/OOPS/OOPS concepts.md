@@ -572,25 +572,39 @@ Syntax:  static datatype variable = data;
 
 
 
+###### **Static Block:**
 
 
 
+Def- A static block (or static initialization block) is a block of code in Java executed automatically once when its containing class is loaded into memory by the class loader, occurring before any objects are created or the main method is invoked.  It is defined using the static keyword and curly braces, primarily used to initialize static variables, perform class-level setup, or load resources that apply to all instances of the class.
 
 
 
+The static block is initialized first. In JVM, you have class loader, where the class is loaded only once and every time you load a class the static block is called. Class loader -> Static block -> Object creation. 
 
 
 
+If there is no object in the class will the static block gets loaded? NO, it will not initialize the static block. The class itself, will not be loaded. If you want to create class irrespective of the object being present, there is a special class in java called "Class". which loads the class.
 
 
 
+for e.g. Class.forName(className: "Mobile");
 
 
 
+In Java, static blocks can only access static members and cannot use the this keyword; they are part of the class definition rather than individual objects.  If a class contains multiple static blocks, they execute in the order they appear in the source code. 
 
 
 
+The parameter in the constructor gets initialized each time the parameters are called from the constructor to avoid that, the parameters in the static blocks are initialized only one time. So the parameters in the static block cannot be present in a constructor, where .this keyword cant be used.
 
+
+
+Even multiple objects are created, the static block is initialized only one time.
+
+
+
+Syntax: static{}
 
 
 
