@@ -444,6 +444,16 @@ String name = new String("Aadi");(Syntax)
 
 
 
+String name = new String("Aadi");
+
+String name1 = new String("Aadi");
+
+
+
+By using the original way each time a new object is created, even if multiple object variable contains the same already existed duplicate data, it doesn't create object inside the String constant pool. It creates new objects each time with different address even if the data is same.
+
+
+
 Since it is a class, it contains various methods.
 
 
@@ -451,6 +461,10 @@ Since it is a class, it contains various methods.
 Universal use will be;
 
 String name = "Aadi";(Syntax)
+
+
+
+Here it uses String constant pool.
 
 
 
@@ -510,11 +524,55 @@ The string buffer has multiple methods like append(), toString(), insert(), subs
 
 
 
-String Builder is similar to string Buffer, one difference is string buffer is tread-safe and string builder is not thread-safe. 
+String Builder is similar to string Buffer, one difference is string buffer is tread-safe and string builder is not thread-safe.
 
 
 
 Refer String \& Immutable String- OOPS \& Mutable String- OOPS.
+
+
+
+##### **Static Keyword:**
+
+
+
+**It keeps the implementation same for all instance.**
+
+
+
+###### **Static Variable:**
+
+
+
+Def- It is used to make variables common to all objects. if you change the data for the static variables in the future, it will change the data to in objects.
+
+
+
+The static variable is shared by all the objects. It is a common variable.
+
+
+
+The static variable belongs to a class. That's why;
+
+
+
+The static variable should be called with the class name, you should not call with object name, you can call with it but not a good implementation.
+
+
+
+There will be a separate area in your JVM for static variable.
+
+
+
+You can use static variable in non-static methods.
+
+
+
+Syntax:  static datatype variable = data;
+
+
+
+
 
 
 
