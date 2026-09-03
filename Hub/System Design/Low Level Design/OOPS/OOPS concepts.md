@@ -588,7 +588,7 @@ If there is no object in the class will the static block gets loaded? NO, it wil
 
 
 
-for e.g. '''Class.forName(className: "Mobile");'''
+for e.g. ```Class.forName(className: "Mobile");```
 
 
 
@@ -622,9 +622,9 @@ e.g.
 
 
 
-Can't do - '''Mobile.show();'''
+Can't do - ```Mobile.show();```
 
-Can do - '''obj.show();
+Can do - ```obj.show();```
 
 
 
@@ -637,44 +637,4 @@ And the main method cannot call the static methods if it's not static, which mea
 
 
 Refer Static Methods- OOPS.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
