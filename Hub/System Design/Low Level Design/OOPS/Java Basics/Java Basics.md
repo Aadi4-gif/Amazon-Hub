@@ -6,12 +6,7 @@
 
 
 
-##### **Object Oriented Programming-**
-
-
-
-Java is Object oriented programming.
-
+##### **Java Basics-**
 
 
 ###### **Object:**
