@@ -580,7 +580,7 @@ Def- A static block (or static initialization block) is a block of code in Java 
 
 
 
-The static block is initialized first. In JVM, you have class loader, where the class is loaded only once and every time you load a class the static block is called. Class loader -> Static block -> Object creation. 
+The static block is initialized first. In JVM, you have class loader, where the class is loaded only once and every time you load a class the static block is called. Class loader -> Static block -> Object creation.
 
 
 
@@ -588,11 +588,11 @@ If there is no object in the class will the static block gets loaded? NO, it wil
 
 
 
-for e.g. Class.forName(className: "Mobile");
+for e.g. '''Class.forName(className: "Mobile");'''
 
 
 
-In Java, static blocks can only access static members and cannot use the this keyword; they are part of the class definition rather than individual objects.  If a class contains multiple static blocks, they execute in the order they appear in the source code. 
+In Java, static blocks can only access static members and cannot use the this keyword; they are part of the class definition rather than individual objects.  If a class contains multiple static blocks, they execute in the order they appear in the source code.
 
 
 
@@ -605,6 +605,76 @@ Even multiple objects are created, the static block is initialized only one time
 
 
 Syntax: static{}
+
+
+
+
+
+###### **Static Method:**
+
+
+
+Whenever you use non-static method/ instance method, an object should be created. To call the method, the object should be created. So you have to use the object to call the instance method.
+
+
+
+e.g.
+
+
+
+Can't do - '''Mobile.show();'''
+
+Can do - '''obj.show();
+
+
+
+The static method can be called using the class name. Because, the static method can be called at the point of the class got created/loaded. You can only use static variable inside a static method, instance variables can't be called by the static method. But you can do it indirectly by giving access/referencing to the object in the static method and call the static variable by mentioning the obj in the method calling syntax.
+
+
+
+And the main method cannot call the static methods if it's not static, which means without static, the object of Main should be called before the main method being called. Which is not possible as the main method run's the object creation and the entire system. To overcome this static is used, so that no object creation is required because the method can be called at the point of loading the class itself.
+
+
+
+Refer Static Methods- OOPS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
